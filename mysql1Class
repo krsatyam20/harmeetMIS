@@ -1,0 +1,50 @@
+create database
+	syn:
+		cretae database databaseName;
+		
+show all database/database list
+
+	syn:
+		show databases;
+		
+select database
+	syn:
+	 use databaseName
+
+delete database (no truncate/delete option/command)
+		syn:
+		drop database database/database
+		
+create table
+		syn:
+			cretae table tableName (columnName dataType(lenth) attributes,columnName2 ....)
+			
+		data: is a raw value 
+			data type 
+				integer(0-10)
+				 long int 
+				 tinyint(0-1)
+				varchar(0-255)
+				text(unlimted)
+				date
+				time
+				date time
+	ex: create table student (id int(11) primary key auto_increment,student_name varchar(55))  	
+		
+		
+data insert into table 
+		syn:
+			insert into tablename(tableColumnName1,...) values(value)
+			insert into student (student_name,student_email) values("harmeet","harmeet@gmail.com");
+		
+		
+Fetch data from table	
+
+	syn	
+		fetch all data 
+		select * from tableName;
+		
+
+Count data 
+select count(*) as numberOfStudent from student;
+		
